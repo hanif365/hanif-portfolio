@@ -166,7 +166,7 @@ const Navbar = () => {
                   </Link>
                 </motion.div>
               </li>
-              <li className="text-sm font-medium py-2 text-center border-b-2 border-border md:border-b-0 md:hidden">
+              {/* <li className="text-sm font-medium py-2 text-center border-b-2 border-border md:border-b-0 md:hidden">
                 <button
                   className="p-2 rounded-full transition-colors duration-300"
                   onClick={toggleTheme}
@@ -189,14 +189,14 @@ const Navbar = () => {
                     </motion.div>
                   </AnimatePresence>
                 </button>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
 
         <div className="hidden md:flex md:flex-initial">
           <ul className="items-center justify-end md:flex space-y-4 md:space-y-0 md:space-x-4">
-            <li className="text-sm font-medium py-2 text-center">
+            {/* <li className="text-sm font-medium py-2 text-center">
               <button
                 className="p-2 rounded-full transition-colors duration-300 cursor-pointer"
                 onClick={toggleTheme}
@@ -219,7 +219,7 @@ const Navbar = () => {
                   </motion.div>
                 </AnimatePresence>
               </button>
-            </li>
+            </li> */}
             <li className="text-sm font-medium py-2 text-center">
               <motion.div
                 key={isDarkMode ? "dark-hire" : "light-hire"}
