@@ -13,11 +13,29 @@ const Navbar = () => {
   const pathname = usePathname();
 
   useEffect(() => {
-    setIsDarkMode(document.documentElement.classList.contains("dark"));
+    // Check for saved theme preference or use user's system preference
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    if (savedTheme === 'dark' || (savedTheme === null && prefersDark)) {
+      document.documentElement.classList.add('dark');
+      setIsDarkMode(true);
+    } else {
+      document.documentElement.classList.remove('dark');
+      setIsDarkMode(false);
+    }
   }, []);
 
   const toggleTheme = () => {
-    document.documentElement.classList.toggle("dark");
+    const newTheme = !isDarkMode ? 'dark' : 'light';
+    
+    if (newTheme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+    
+    localStorage.setItem('theme', newTheme);
     setIsDarkMode(!isDarkMode);
   };
 

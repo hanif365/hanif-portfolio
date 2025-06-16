@@ -55,7 +55,7 @@ const Header = () => {
         {/* Experience */}
         <div className="flex items-center justify-center py-4 sm:py-5 md:py-6 lg:py-7  sm:border-r border-gray-200 dark:border-gray-800 flex-1">
           <div className="text-center">
-            <h3 className="text-xl sm:text-2xl md:text-4xl">5+ Years</h3>
+            <h3 className="text-xl sm:text-2xl md:text-4xl">3+ Years</h3>
             <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 mt-1">
               Professional Development Experience
             </p>
