@@ -85,11 +85,25 @@ const Header = () => {
                   Available for Projects
                 </p>
               </div>
+
+              <div className="flex flex-col xs:flex-row gap-2 sm:gap-3">
               <button className="w-full sm:w-auto group relative bg-gradient-to-r cursor-pointer from-indigo-500 to-purple-500 text-white px-6 sm:px-8 md:px-10 py-1 sm:py-1 rounded-xl font-medium text-sm sm:text-base">
                 <span className="relative z-10">Let&apos;s talk</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </button>
+              <a
+                  href="https://drive.google.com/uc?id=1sznbY-55TzLxcOVkaqBuYCeOmUomyzld&export=download"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto group relative bg-gradient-to-r cursor-pointer from-indigo-500 to-purple-500 text-white px-6 md:px-5 py-1 sm:py-1 rounded-xl font-medium text-sm sm:text-base"
+                >
+                 
+                  <span>Download Resume</span>
+                </a>
+                </div>
             </div>
+
+           
 
             <div className="relative">
               <Image
