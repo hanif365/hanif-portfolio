@@ -95,9 +95,8 @@ const Header = () => {
                   href="https://drive.google.com/uc?id=1sznbY-55TzLxcOVkaqBuYCeOmUomyzld&export=download"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full sm:w-auto group relative bg-gradient-to-r cursor-pointer from-indigo-500 to-purple-500 text-white px-6 md:px-5 py-1 sm:py-1 rounded-xl font-medium text-sm sm:text-base"
+                  className="w-full sm:w-auto group relative bg-transparent border-2 border-indigo-500 cursor-pointer text-indigo-500 hover:text-white hover:bg-indigo-500 px-6 md:px-5 py-1 sm:py-1 rounded-xl font-medium text-sm sm:text-base transition-colors duration-300"
                 >
-                 
                   <span>Download Resume</span>
                 </a>
                 </div>
