@@ -1,9 +1,9 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-import { IProject, useGetProjectDetailsQuery } from '@/redux/features/projects/projectApi';
+import { useGetProjectDetailsQuery } from '@/redux/features/projects/projectApi';
 import { FaGithub, FaCalendarAlt } from 'react-icons/fa';
 import { FiArrowLeft, FiExternalLink } from 'react-icons/fi';
 import { format } from 'date-fns';
