@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <header className="flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8 pt-24 sm:pt-28 lg:pt-34 2xl:pt-60 max-w-7xl mx-auto">
+    <header className="flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8 pt-5 sm:pt-10 lg:pt-10 2xl:pt-40 max-w-7xl mx-auto">
       {/* Greeting Section */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
