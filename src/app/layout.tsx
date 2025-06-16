@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Montserrat } from "next/font/google";
 import Navbar from "@/components/Shared/Navbar/Navbar";
+import Footer from "@/components/Shared/Footer/Footer";
 import { Providers } from '@/redux/provider';
 
 
@@ -26,7 +27,10 @@ export default function RootLayout({
       <body className={`${montserrat.variable} antialiased`}>
         <Providers>
           <Navbar />
-          {children}
+          <main className="min-h-screen pt-20">
+            {children}
+          </main>
+          <Footer />
         </Providers>
       </body>
     </html>
