@@ -110,12 +110,12 @@ const Navbar = () => {
           <div
             className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
               navbar
-                ? "p-6 md:p-0 block"
+                ? "p-6 md:p-0 block fixed top-[4.5rem] left-0 right-0 w-full h-[calc(100vh-4.5rem)] bg-white dark:bg-gray-800 shadow-lg md:static md:min-h-0 md:bg-transparent md:shadow-none"
                 : "hidden md:block bg-primary rounded-xl px-2"
               // : "hidden md:block bg-gray-100/80 rounded-xl px-2"
             }`}
           >
-            <ul className="h-screen md:h-auto items-center justify-center md:flex space-y-4 md:space-y-0">
+            <ul className="h-full md:h-auto items-center justify-center md:flex space-y-4 md:space-y-0">
               {["Home", "Skills", "Experience", "Education", "Blogs", "Contact"].map((item) => {
                 const itemPath =
                   item === "Home" ? "/" : `/${item.toLowerCase()}`;

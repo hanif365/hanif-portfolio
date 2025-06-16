@@ -56,8 +56,8 @@ const Blogs = () => {
           </h2>
           <div className="w-20 h-1 bg-indigo-500 mx-auto mb-4"></div>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Dive into my latest thoughts, tutorials, and insights about web development and technology.
-          </p>
+              Dive into my latest thoughts, tutorials, and insights about web development and technology.
+            </p>
         </motion.div>
         
         <motion.div 
