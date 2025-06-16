@@ -51,7 +51,7 @@ export default async function BlogPage({ params }: { params: BlogParams }) {
   }
   
   return (
-    <div className="min-h-screen bg-white py-16 mt-10">
+    <div className="min-h-screen bg-white py-5 px-4">
       <div className="container mx-auto px-4 max-w-4xl">
         <Link 
           href="/blogs"

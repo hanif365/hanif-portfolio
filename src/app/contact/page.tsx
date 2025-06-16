@@ -5,7 +5,7 @@ import PageTitle from "@/components/Shared/PageTitle/PageTitle";
 
 const ContactPage = () => {
   return (
-    <div className="container mx-auto py-12 px-4 mt-10">
+    <div className="container mx-auto py-5 px-4">
       <PageTitle 
         title="Contact Me"
         description="Have a question or want to work together? Fill out the form below and I'll get back to you as soon as possible."
