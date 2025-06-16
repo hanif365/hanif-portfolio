@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { FiCalendar, FiMapPin } from 'react-icons/fi';
+import PageTitle from '@/components/Shared/PageTitle/PageTitle';
 
 const EducationPage = () => {
 
@@ -36,12 +37,11 @@ const EducationPage = () => {
   return (
     <div className="min-h-screen bg-white py-16 mt-10">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h1 className="text-5xl font-bold mb-4">Education</h1>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            My academic background and educational qualifications.
-          </p>
-        </div>
+        <PageTitle
+          title="Education"
+          description="My academic background and educational qualifications."
+          color="blue"
+        />
         
         <div className="max-w-4xl mx-auto">
           <div className="relative">

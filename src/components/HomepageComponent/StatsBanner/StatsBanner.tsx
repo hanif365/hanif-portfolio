@@ -68,7 +68,7 @@ const StatsBanner = () => {
   
   const stats = [
     { icon: <FaCode />, value: 50, label: 'Projects Completed' },
-    { icon: <FaBriefcase />, value: 4, label: 'Years Experience', suffix: '+' },
+    { icon: <FaBriefcase />, value: 3, label: 'Years Experience', suffix: '+' },
     { icon: <FaLaptopCode />, value: 20, label: 'Technologies Used' },
     { icon: <FaUsers />, value: 15, label: 'Happy Clients' }
   ];

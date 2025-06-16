@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { useGetAllExperiencesQuery } from '@/redux/features/experiences/experienceApi';
 import { format } from 'date-fns';
 import { FiMapPin, FiCalendar, FiExternalLink } from 'react-icons/fi';
+import PageTitle from '@/components/Shared/PageTitle/PageTitle';
 
 const ExperiencePage = () => {
   const { data: experienceData, isLoading } = useGetAllExperiencesQuery();
@@ -44,12 +45,11 @@ const ExperiencePage = () => {
   return (
     <div className="min-h-screen bg-white py-16 mt-10">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h1 className="text-5xl font-bold mb-4">Work Experience</h1>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            My professional journey and career highlights in the technology industry.
-          </p>
-        </div>
+        <PageTitle
+          title="Work Experience"
+          description="My professional journey and career highlights in the technology industry."
+          color="indigo"
+        />
         
         <div className="max-w-4xl mx-auto">
           {experienceData?.data?.length === 0 ? (

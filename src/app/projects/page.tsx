@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { useGetAllProjectsQuery } from '@/redux/features/projects/projectApi';
 import ProjectCard from '@/components/HomepageComponent/Projects/ProjectCard';
+import PageTitle from '@/components/Shared/PageTitle/PageTitle';
 
 const PROJECTS_PER_PAGE = 6;
 
@@ -34,12 +35,12 @@ const ProjectsPage = () => {
   return (
     <div className="min-h-screen bg-gray-50 py-16 mt-10">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold mb-4">My Projects</h1>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            Explore my portfolio of web development projects and applications.
-          </p>
-        </div>
+        <PageTitle
+          title="My Projects"
+          description="Explore my portfolio of web development projects and applications."
+          color="blue"
+        />
+        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {currentProjects.map((project) => (
             <ProjectCard key={project._id} project={project} />

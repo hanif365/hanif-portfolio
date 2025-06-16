@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { useGetAllBlogsQuery } from '@/redux/features/blogs/blogApi';
 import BlogCard from '@/components/HomepageComponent/Blogs/BlogCard';
+import PageTitle from '@/components/Shared/PageTitle/PageTitle';
 
 const BLOGS_PER_PAGE = 6;
 
@@ -34,12 +35,11 @@ const BlogsPage = () => {
   return (
     <div className="min-h-screen bg-white py-16 mt-10">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold mb-4">My Blog</h1>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            Thoughts, tutorials, and insights about web development and technology.
-          </p>
-        </div>
+        <PageTitle
+          title="My Blog"
+          description="Thoughts, tutorials, and insights about web development and technology."
+          color="indigo"
+        />
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {currentBlogs.map((blog) => (

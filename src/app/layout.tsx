@@ -13,8 +13,27 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Hanif Portfolio",
-  description: "Hanif Portfolio",
+  title: {
+    default: "MD. Abu Hanif | Full-Stack Developer",
+    template: "%s | MD. Abu Hanif"
+  },
+  description: "Professional portfolio of MD. Abu Hanif, a Full-Stack Developer specializing in React, Next.js, Node.js and modern web technologies.",
+  keywords: ["Full-Stack Developer", "Web Developer", "React Developer", "Next.js Developer", "Frontend Developer", "Backend Developer", "Bangladesh"],
+  authors: [{ name: "MD. Abu Hanif" }],
+  creator: "MD. Abu Hanif",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://abuhanif.vercel.app",
+    title: "MD. Abu Hanif | Full-Stack Developer",
+    description: "Professional portfolio of MD. Abu Hanif, a Full-Stack Developer specializing in React, Next.js, Node.js and modern web technologies.",
+    siteName: "MD. Abu Hanif Portfolio",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "MD. Abu Hanif | Full-Stack Developer",
+    description: "Professional portfolio of MD. Abu Hanif, a Full-Stack Developer specializing in React, Next.js, Node.js and modern web technologies.",
+  },
 };
 
 export default function RootLayout({

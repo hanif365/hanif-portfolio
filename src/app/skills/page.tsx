@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { useGetAllSkillsQuery } from '@/redux/features/skills/skillApi';
 import type { TSkillCategory } from '@/redux/features/skills/skillApi';
 import Image from 'next/image';
+import PageTitle from '@/components/Shared/PageTitle/PageTitle';
 
 const SkillsPage = () => {
   const { data: skillsData, isLoading } = useGetAllSkillsQuery();
@@ -49,12 +50,11 @@ const SkillsPage = () => {
   return (
     <div className="min-h-screen bg-white py-16 mt-10">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h1 className="text-5xl font-bold mb-4">My Skills</h1>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            A comprehensive overview of my technical expertise and proficiency in various technologies.
-          </p>
-        </div>
+        <PageTitle
+          title="My Skills"
+          description="A comprehensive overview of my technical expertise and proficiency in various technologies."
+          color="purple"
+        />
         
         {/* Category filter */}
         <div className="flex flex-wrap justify-center gap-3 mb-10">

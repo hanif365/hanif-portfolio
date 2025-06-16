@@ -1,19 +1,16 @@
-import ContactForm from "@/components/ContactForm";
+"use client";
 
-export const metadata = {
-  title: "Contact Me | Portfolio",
-  description: "Get in touch with me through this contact form",
-};
+import ContactForm from "@/components/ContactForm";
+import PageTitle from "@/components/Shared/PageTitle/PageTitle";
 
 const ContactPage = () => {
   return (
     <div className="container mx-auto py-12 px-4 mt-10">
-      <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold mb-4">Contact Me</h1>
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-          Have a question or want to work together? Fill out the form below and I@apos;ll get back to you as soon as possible.
-        </p>
-      </div>
+      <PageTitle 
+        title="Contact Me"
+        description="Have a question or want to work together? Fill out the form below and I'll get back to you as soon as possible."
+        color="purple"
+      />
       
       <div className="flex flex-col lg:flex-row gap-12 justify-between">
         <div className="lg:w-1/2">
