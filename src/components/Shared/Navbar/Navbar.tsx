@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FaEquals, FaXmark } from "react-icons/fa6";
-import { IoMoonOutline, IoSunnyOutline } from "react-icons/io5";
-import { motion, AnimatePresence } from "framer-motion";
+// import { IoMoonOutline, IoSunnyOutline } from "react-icons/io5";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -26,48 +26,48 @@ const Navbar = () => {
     }
   }, []);
 
-  const toggleTheme = () => {
-    const newTheme = !isDarkMode ? 'dark' : 'light';
+  // const toggleTheme = () => {
+  //   const newTheme = !isDarkMode ? 'dark' : 'light';
     
-    if (newTheme === 'dark') {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
+  //   if (newTheme === 'dark') {
+  //     document.documentElement.classList.add('dark');
+  //   } else {
+  //     document.documentElement.classList.remove('dark');
+  //   }
     
-    localStorage.setItem('theme', newTheme);
-    setIsDarkMode(!isDarkMode);
-  };
+  //   localStorage.setItem('theme', newTheme);
+  //   setIsDarkMode(!isDarkMode);
+  // };
 
-  const iconVariants = {
-    initial: {
-      x: -50,
-      opacity: 0,
-      rotate: -180,
-      scale: 0.5,
-    },
-    animate: {
-      x: 0,
-      opacity: 1,
-      rotate: 0,
-      scale: 1,
-      transition: {
-        type: "spring",
-        stiffness: 200,
-        damping: 12,
-      },
-    },
-    exit: {
-      x: 50,
-      opacity: 0,
-      rotate: 180,
-      scale: 0.5,
-      transition: {
-        duration: 0.3,
-        ease: "easeInOut",
-      },
-    },
-  };
+  // const iconVariants = {
+  //   initial: {
+  //     x: -50,
+  //     opacity: 0,
+  //     rotate: -180,
+  //     scale: 0.5,
+  //   },
+  //   animate: {
+  //     x: 0,
+  //     opacity: 1,
+  //     rotate: 0,
+  //     scale: 1,
+  //     transition: {
+  //       type: "spring",
+  //       stiffness: 200,
+  //       damping: 12,
+  //     },
+  //   },
+  //   exit: {
+  //     x: 50,
+  //     opacity: 0,
+  //     rotate: 180,
+  //     scale: 0.5,
+  //     transition: {
+  //       duration: 0.3,
+  //       ease: "easeInOut",
+  //     },
+  //   },
+  // };
 
   const hireMeVariants = {
     initial: {
