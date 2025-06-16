@@ -28,19 +28,18 @@ const Header = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2 }}
-        className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl mt-2 sm:mt-3 md:mt-4 font-medium"
+        className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl mt-2 sm:mt-3 md:mt-4 font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400"
       >
         MD. ABU HANIF
       </motion.h1>
-
       {/* Role & Description Section */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.4 }}
-        className="w-full max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 mt-0 md:mt-4 lg:mt-6 2xl:mt-10"
+        className="w-full max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 mt-0 md:mt-2 lg:mt-4 2xl:mt-6"
       >
-        <h2 className="text-lg sm:text-xl md:text-2xl lg:text-4xl md:leading-12 mt-4 sm:mt-6 md:mt-8">
+        <h2 className="text-lg sm:text-xl md:text-2xl lg:text-4xl md:leading-12 mt-4">
           Expert Full-Stack Developer Creating Modern Web Solutions For You
         </h2>
       </motion.div>
@@ -50,12 +49,12 @@ const Header = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.6 }}
-        className="flex flex-col sm:flex-row items-stretch justify-center w-full max-w-5xl mx-auto mt-8 sm:mt-10 md:mt-12 rounded-xl dark:bg-[#1D232A] shadow  gap-4 sm:gap-0"
+        className="flex flex-col sm:flex-row items-stretch justify-center w-full max-w-5xl mx-auto mt-8 sm:mt-10 md:mt-12 rounded-xl dark:bg-[#1D232A] shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700"
       >
         {/* Experience */}
         <div className="flex items-center justify-center py-4 sm:py-5 md:py-6 lg:py-7  sm:border-r border-gray-200 dark:border-gray-800 flex-1">
           <div className="text-center">
-            <h3 className="text-xl sm:text-2xl md:text-4xl">3+ Years</h3>
+            <h3 className="text-xl sm:text-2xl md:text-4xl font-bold">3+ Years</h3>
             <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 mt-1">
               Professional Development Experience
             </p>
@@ -65,8 +64,8 @@ const Header = () => {
         {/* Location */}
         <div className="flex items-center justify-center py-4 sm:py-5 md:py-6 lg:py-7 sm:border-r border-gray-200 dark:border-gray-800 flex-1">
           <div className="text-center">
-            <h3 className="text-xl sm:text-2xl md:text-4xl flex items-center justify-center gap-2">
-              Bangladesh <TfiLocationPin />
+            <h3 className="text-xl sm:text-2xl md:text-4xl flex items-center justify-center gap-2 font-bold">
+              Bangladesh <TfiLocationPin className="text-blue-500" />
             </h3>
             <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 mt-1">
               Based in Dhaka, Available Worldwide
