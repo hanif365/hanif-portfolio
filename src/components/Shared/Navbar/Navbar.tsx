@@ -116,7 +116,7 @@ const Navbar = () => {
             }`}
           >
             <ul className="h-screen md:h-auto items-center justify-center md:flex space-y-4 md:space-y-0">
-              {["Home", "Services", "About", "Blogs", "Contact"].map((item) => {
+              {["Home", "Services", "Skills", "About", "Blogs", "Contact"].map((item) => {
                 const itemPath =
                   item === "Home" ? "/" : `/${item.toLowerCase()}`;
                 const isActive = pathname === itemPath;
