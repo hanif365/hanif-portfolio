@@ -9,7 +9,7 @@ const EducationPage = () => {
   const educationData = [
     {
       id: 1,
-      degree: "Bachelor of Science in Computer Science",
+      degree: "Bachelor of Science in Computer Science and Engineering",
       institution: "Bangladesh Open University",
       location: "Dhaka, Bangladesh",
       start_date: "2016-01-10",
